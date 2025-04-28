@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>
+        Bite!
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Bg2.css">
+    <link rel="stylesheet" href="Body2.css">
+    <link rel="stylesheet" href="Header2.css">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <div class="left"> 
+            <button class="menu">
+                <img class="menuicon" src="picturess/8 (1).jpg">
+                Menu
+            </button>
+        </div>
+        
+        <div class="right"> 
+            <button class="yt">
+                <img class="yticon" src="picturess/9 (1).jpg">
+            </button>
+
+            <button class="ig">
+                <img class="igicon" src="picturess/10 (1).jpg">
+            </button>
+
+            <button class="call">
+                <img class="callicon" src="picturess/11 (1).jpg">
+            </button>
+        </div>
+    </div>
+    
+    <div class="maindiv">
+        <div class="grid1">
+            <div class="logodiv">
+                <img class="logo" src="picturess/Bite!.png">
+            </div>
+            <div class="mottodiv">
+                <p class="motto">Small bites, big joy!</p>
+            </div>
+            <div class="buttondiv">
+                <button class="button">
+                    Check our delivery locations!
+                    <img class="arrow" src="picturess/right-arrow.png">
+                </button>
+            </div>
+        </div>
+    
+        <div class="grid2">
+            <div class="cookie1">
+                <img class="cookiepic1" src="picturess/bite ui (1).png">
+            </div>
+            <div class="cookie2">
+                <img class="cookiepic2" src="picturess/bite ui (1).png">
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+BODY
+
+
+
+body {
+    background-image: url(picturess/bite\ ui.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.maindiv {
+    height: 800px;
+    margin-bottom: 0;
+    display: flex;
+    margin-top: 82px;
+}
+
+
+
+.logodiv {
+    top: 0;
+    height: 140px;
+}
+
+.logo {
+    object-fit: cover;
+    height: 140px;
+    width: 420px;
+    margin-left: 160px;
+    margin-top: 80px;
+}
+
+.motto {
+    margin: 0;
+    margin-left: 120px;
+    margin-top: 90px;
+    font-size: 60px;
+    color: rgb(250, 250, 203);
+    font-family: "League Spartan", sans-serif;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.buttondiv {
+    height: 80px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.button:hover .arrow {
+    filter: invert(1);
+}
+
+.button:active {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+    height: 40px;
+    width: 330px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.cookie1 {
+    height: 100px;
+    width: 600px;
+    margin-bottom: 100px;
+    display: block;
+    margin-bottom: 200px;
+}
+
+.cookiepic1 {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: translateY(-50px);
+}
+
+.cookie2 {
+    height: 250px;
+    width: 600px;
+    margin-bottom: 2000px;
+}
+
+.cookiepic2 {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+HEADER 
+
+
+
+
+
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left : 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding-top: 5px;
+}
+
+.right {
+    display: flex; /* Change from grid to flex if unnecessary */
+    justify-content: flex-end; /* Align content to the right */
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-right: 52px;
+    flex-shrink: 0;
+    justify-content: space-between;
+
+}
+
+.menu {
+    height: 50px;
+    width: 140px;
+    border-radius: 40px;
+    margin-top: 18px;
+    margin-left: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.menu:hover .menuicon {
+    filter: invert(1);
+}
+
+.menu:active {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.menuicon{
+    height: 40px;
+    margin-left: -42px;
+    margin-bottom: -4px;
+    margin-right: 8px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.yt {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-left: 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.yt:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.yt:active {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.yt:hover .yticon {
+    filter: invert(1);
+}
+
+.yticon {
+    height: 30px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.ig {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-left: 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ig:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.ig:active {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.ig:hover .igicon {
+    filter: invert(1);
+}
+
+.igicon {
+    height: 38px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.call {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-left: 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.call:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.call:active {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.call:hover .callicon {
+    filter: invert(1);
+}
+
+.callicon {
+    height: 34px;
+    transition: filter 0.2s ease-in-out;
+}
